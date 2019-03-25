@@ -1,0 +1,14 @@
+.dropdown-toggle::after {
+  display: none !important;
+}
+.dropdown-toggle {
+  background: white !important;
+}
+.v-select .dropdown-menu > .highlight > a {
+  background: #36919a;
+}
+
+.v-select .dropdown-menu {
+  text-align: center;
+  font-weight: 600;
+}

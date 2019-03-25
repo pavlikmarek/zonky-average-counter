@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+@import "../global.scss";
+
+.wrapper {
+  @include up-md {
+    padding-top: 15vh;
+  }
+  @include to-md {
+    text-align: center;
+  }
+  height: calc(100vh - 175px);
+  background-color: #41b2bd;
+  display: flex;
+  overflow: scroll;
+}
+.counter {
+  @include up-md {
+    margin-left: 15%;
+  }
+  @include to-md {
+    margin: 0 auto;
+  }
+  width: 50%;
+  height: 100%;
+}
+.image-wrapper {
+  margin-left: 15px;
+  position: relative;
+}
+.image-wrapper {
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+}
+.lable {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+  text-align: left;
+}
+.avarage {
+  margin-top: 2rem;
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.title {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 50px;
+  color: white;
+  @include up-md {
+    text-align: left;
+  }
+  @include to-md {
+    padding: 10px;
+  }
+}
