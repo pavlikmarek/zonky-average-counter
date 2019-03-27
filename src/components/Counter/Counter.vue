@@ -4,31 +4,34 @@
       <div class="row">
         <div class="col-12 col-md-8">
           <div class="row">
-            <div class="title">
+            <h1 class="title">
               Spočítám ti průměrnou výši půjček pro daný rating
-            </div>
+            </h1>
           </div>
           <div class="row">
             <div class="counter">
               <div class="lable">Rating</div>
-              <v-select
-                label="rating"
-                :options="options"
-                @input="setRating"
-              ></v-select>
+              <v-select label="rating" :options="options" @input="setRating">
+                <span slot="no-options">Takový rating neexistuje :'(</span>
+              </v-select>
               <div class="avarage">
-                <template v-if="loading"
-                  >NAČÍTÁNÍ</template
-                >
+                <template v-if="this.getError">
+                  <small class="error">{{ this.getError }}</small>
+                </template>
                 <template v-else>
-                  <template v-if="this.getAverage">
-                    <small>Průměrně se půjčuje:</small>
-                    <br />
-                    {{ this.getAverage }},- CZK
-                  </template>
-                  <template v-else
-                    >Zvol si rating</template
+                  <template v-if="loading"
+                    >NAČÍTÁNÍ</template
                   >
+                  <template v-else>
+                    <template v-if="this.getAverage">
+                      <small>Průměrně se půjčuje:</small>
+                      <br />
+                      {{ this.getAverage }},- CZK
+                    </template>
+                    <template v-else
+                      >Zvol si rating</template
+                    >
+                  </template>
                 </template>
               </div>
             </div>

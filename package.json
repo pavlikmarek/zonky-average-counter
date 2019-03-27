@@ -7,9 +7,11 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "test": "vue-cli-service test:unit && vue-cli-service test:e2e"
   },
   "dependencies": {
+    "@sentry/browser": "^4.6.5",
     "@types/vue-select": "^2.5.0",
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
@@ -20,6 +22,7 @@
     "vue-router": "^3.0.1",
     "vue-select": "^2.6.0",
     "vue-template-loader": "^1.0.0",
+    "vue-test-utils": "^1.0.0-beta.11",
     "vuex": "^3.0.1",
     "vuex-class": "^0.3.2"
   },

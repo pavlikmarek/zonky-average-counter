@@ -4,5 +4,5 @@
   </div>
 </template>
 
-<script lang="ts" src="./Footer.ts"></script> 
-<style scoped lang="scss" src="./Footer.scss">
+<script lang="ts" src="./Footer.ts"></script>
+<style scoped lang="scss" src="./Footer.scss" />

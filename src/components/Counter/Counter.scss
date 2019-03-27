@@ -1,5 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
 @import "../global.scss";
+@font-face {
+  font-family: "Amatic SC";
+  src: url(/fonts/AmaticSC-Bold.ttf) format("opentype");
+}
 
 .wrapper {
   @include up-md {
@@ -57,4 +60,7 @@
   @include to-md {
     padding: 10px;
   }
+}
+.error {
+  color: red;
 }
