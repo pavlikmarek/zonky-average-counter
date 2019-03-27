@@ -1,7 +1,7 @@
 import * as Sentry from "@sentry/browser";
 
 Sentry.init({
-  dsn: "https://469b3fdbd7a74a84bb58fc6266db00a2@sentry.io/1423503",
+  dsn: process.env.VUE_APP_SENTRY_DNS,
   integrations:
     process.env.NODE_ENV === "production"
       ? [new Sentry.Integrations.Vue({ Vue })]
