@@ -13,7 +13,7 @@
   "dependencies": {
     "@sentry/browser": "^4.6.5",
     "@types/vue-select": "^2.5.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.6",
